@@ -1,0 +1,33 @@
+.rightbarHome {
+  .birthdayContainer {
+    display: flex;
+    align-items: center;
+
+    .birthdayImg {
+      width: 75px;
+      height: 75px;
+      object-fit: cover;
+      margin-right: 10px;
+      border-radius: 10px;
+    }
+    .birthdayText {
+      font-weight: 300;
+      cursor: pointer;
+      font-size: 15px;
+    }
+  }
+
+  .rightbarAdvert {
+    width: 100%;
+    margin: 25px 0;
+    border-radius: 10px;
+    cursor: pointer;
+    -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+    box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+  }
+
+  .rightbarTitle {
+    display: flex;
+    margin-bottom: 20px;
+  }
+}

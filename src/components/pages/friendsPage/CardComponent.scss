@@ -1,0 +1,48 @@
+.friends_card{
+    background-color: white;
+    height: 350px;
+    width: 250px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 15px;
+    -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+    box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+    transition: transform 0.3s ease; 
+    &:hover {
+        // transform: scale(1.05);
+        // transform: rotate(5deg);
+        animation: twist 0.5s ease infinite alternate;
+      }
+
+      @keyframes twist {
+        0% {
+          transform: rotate(0deg); /* Initial state */
+        }
+        100% {
+          transform: rotate(3deg); /* Final state (twist angle can be adjusted) */
+        }
+      }
+}
+
+.username{
+   width: 100%;
+   font-weight: 700;
+}
+
+.friend_image{
+    height: 200px;
+    width: 200px;
+    overflow: hidden;
+    object-fit: cover;
+    background-size: cover;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    border-radius:10px;
+}
+ 
+
+.friend_name, .friend_email{
+    width: 100%;
+}

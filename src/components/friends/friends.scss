@@ -1,0 +1,26 @@
+.friendItem {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  cursor: pointer;
+
+  .friendImg {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 20px;
+  }
+  .friendName {
+    font-weight: 500;
+    color: black;
+  }
+}
+
+// Responsiveness
+
+@media only screen and (max-width: 992px) {
+  .friendName {
+    display: none;
+  }
+}

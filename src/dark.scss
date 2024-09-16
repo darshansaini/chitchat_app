@@ -1,0 +1,130 @@
+.app.dark {
+  background-color: #111111;
+  color: rgb(156, 156, 156);
+
+  .navbarContainer {
+    background-color: #000235;
+    color: rgb(156, 156, 156);
+    // border-bottom: 0.5px solid rgb(156, 156, 156);
+
+    .logo {
+      color: rgb(156, 156, 156);
+    }
+    .navbarLink {
+      color: rgb(156, 156, 156);
+    }
+    .searchInput {
+      color: #000000;
+    }
+  }
+
+  
+
+  .sidebar {
+    background-color: #111111;
+    color: rgb(156, 156, 156);
+
+    a.active {
+      .menuItem{
+        background-color: rgba(98, 97, 97, 0.3);
+        color: white
+      }
+    }
+
+    .sidebarButton {
+      background-color: rgb(156, 156, 156);
+      color: #000000;
+      &:hover {
+        background-color: rgb(206, 206, 206);
+      }
+    }
+  }
+
+  .menuItem:hover {
+    background-color: rgba(98, 97, 97, 0.3);
+  }
+
+  .friendName {
+    color: rgb(156, 156, 156);
+  }
+
+  .feed {
+    background-color: #111111;
+    color: rgb(156, 156, 156);
+
+    .shareInput {
+      color: rgb(156, 156, 156);
+    }
+  }
+
+  .rightbar {
+    background-color: #111111;
+
+    .username {
+      color: rgb(156, 156, 156);
+    }
+  }
+
+  .profileRightBarHeading {
+    .editButton {
+      background-color: rgb(155, 155, 155);
+      color: #000000;
+
+      &:hover {
+        background-color: rgb(206, 206, 206);
+      }
+    }
+  }
+
+  .editProfile {
+    .editProfileWrapper {
+      .profileRight {
+        .profileRightBottom {
+          .bottom {
+            .right {
+              form {
+                input {
+                  color: rgb(156, 156, 156);
+                }
+                .updateProfile {
+                  background-color: rgb(156, 156, 156);
+                  color: #000000;
+                  border-radius: 5px;
+
+                  &:hover {
+                    background-color: rgb(206, 206, 206);
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .friends_comp{
+    background-color: #111111;
+    
+    .friends_card{
+      background-color: #343434;
+      color: white;
+      
+    }
+  }
+
+  .imageSlider{
+    background-color: #111111;
+  }
+  .watch{
+    background-color: #111111;
+  }
+
+  .login{
+    background-color: #323232;
+  }
+  .register{
+    background-color: #323232;
+  }
+
+}

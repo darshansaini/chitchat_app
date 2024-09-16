@@ -1,19 +1,23 @@
 import React from "react";
 import "./navbar.scss";
-import logo from "../../assets/images_chitchat/logo_t.png";
-import user from "../../assets/images_sanju/others/profile.jpg";
+import logo from "../../assets/images/chitchat/logo_t.png";
+import user from "../../assets/images/other/profile.jpg";
 import SearchIcon from "@mui/icons-material/Search";
 import PersonIcon from "@mui/icons-material/Person";
 import ChatBubbleIcon from "@mui/icons-material/ChatBubble";
 import NotificationsIcon from "@mui/icons-material/Notifications";
+import { Link } from "react-router-dom";
 
+// Application Navigation bar allowing user to navigate on diffrent pages
 const Navbar = () => {
   return (
     <div className="navbarContainer">
       <div className="navbarLeft">
         <div className="logo">
-          <img src={logo} alt="logo" />
-          <span className="name">chitChat</span>
+          <Link to={"/"} style={{ textDecoration: "none" }} className="navLink">
+            <img src={logo} alt="logo" />
+            <span className="name">chitChat</span>
+          </Link>
         </div>
       </div>
       <div className="navbarCenter">
@@ -28,7 +32,9 @@ const Navbar = () => {
       </div>
       <div className="navbarRight">
         <div className="navbarLinks">
-          <span className="navbarLink">Home</span>
+          <Link to={"/"} style={{ textDecoration: "none", color: "white" }}>
+            <span className="navbarLink">Home</span>
+          </Link>
           <span className="navbarLink">Timeline</span>
         </div>
         <div className="navbarIcons">
@@ -45,7 +51,9 @@ const Navbar = () => {
             <span className="navbarIconBadge">2</span>
           </div>
         </div>
-        <img src={user} alt="user profile" className="navbarImg" />
+        <Link to={"/profile/userId"}>
+          <img src={user} alt="user profile" className="navbarImg" />
+        </Link>
       </div>
     </div>
   );

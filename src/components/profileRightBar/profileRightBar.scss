@@ -1,0 +1,53 @@
+.profileRightBar {
+  flex: 3.5;
+  padding: 0 20px 0 0;
+
+  .profileRightBarHeading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 0;
+
+    .profileRightBarTitle {
+      font-size: 18px;
+      font-weight: 500;
+    }
+    .editButton {
+      border: none;
+      padding: 7px;
+      border-radius: 5px;
+      background-color: #011631;
+      color: white;
+      cursor: pointer;
+    }
+  }
+
+  .profileRightBarInfo {
+    margin-bottom: 30px;
+    .profileRightBarInfoItem {
+      margin-bottom: 10px;
+      .profileRightBarItemKey {
+        font-weight: 500;
+        margin-right: 20px;
+      }
+      .profileRightBarItemValue {
+        font-weight: 300;
+      }
+    }
+  }
+
+  .followings {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 3px;
+    margin-top: 20px;
+  }
+}
+
+// Responsive Design
+@media only screen and (max-width: 768px) {
+  .profileRightBar {
+    display: none;
+  }
+}
